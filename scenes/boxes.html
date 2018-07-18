@@ -1,0 +1,45 @@
+
+
+	<a-entity geometry="primitive: box" material="color: #FCB241" position="-4.5 1 -5"
+                
+                event-set__click="_target: #ganti; template: src: scenes/main.html"
+                
+                event-set__mouseenter="material.color: #5A67A6"
+                event-set__mouseleave="material.color: #FCB241"
+                position="-1 0 -2">s
+  
+      </a-entity>
+
+     <a-image 
+        id="left-tile" 
+        class="tile"
+        position="-2 1 -5" 
+        src="#cnidaria"
+        event-set__click="_target: #ganti; template: src: scenes/tes1.html"
+        event-set__mouseenter="scale: 2 2 2 "
+        event-set__mouseleave="scale: 1 1 1"
+       >
+      </a-image>
+
+        <a-image 
+          id="center-tile-image-entity" 
+          class="tile" 
+          position="0 0 -5" 
+          src="#echino" ></a-image>
+        
+
+      <a-image
+        id="right-tile" 
+        class="tile" 
+        position="4.5 1 -5" 
+        src="#mollusca"></a-image>
+
+
+      <a-sky color="#D68D08"></a-sky>
+
+      <a-entity camera look-controls>
+        <a-entity cursor
+                  geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.016"
+                  material="color: #efdf02"
+                  position="0 0 -1"></a-entity>
+      </a-entity>
